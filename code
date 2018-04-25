@@ -1,0 +1,23 @@
+#define _CRT_SECURE_NO_WARNINGS 
+#include <stdio.h> 
+#include <math.h> 
+
+double 
+function(double x, double y) { 
+return (cos(x) - cos(y))*(cos(x) - cos(y)) - (sin(x) - sin(y)) * (sin(x) - sin(y)); 
+} 
+
+int 
+main() { 
+double x = 45, y = 90; 
+
+printf("x = %lf\ny = %lf\nf = %lf\n\n", x, y, function(x, y)); 
+
+printf("x = "); 
+scanf("%lf", &x); 
+printf("y = "); 
+scanf("%lf", &y); 
+printf("f = %lf\n\n", x, y, function(x, y)); 
+
+return 0; 
+}
